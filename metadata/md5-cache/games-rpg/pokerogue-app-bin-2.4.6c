@@ -1,0 +1,9 @@
+DEFINED_PHASES=install
+DESCRIPTION=A desktop electron pokerouge port.
+EAPI=8
+HOMEPAGE=https://github.com/Admiral-Billy/Pokerogue-App
+KEYWORDS=~amd64
+LICENSE=MIT
+SLOT=0
+SRC_URI=https://github.com/Admiral-Billy/Pokerogue-App/releases/download/v2.4.6c/PokeRogue-Linux.zip
+_md5_=a50b5aaf7e787e8cd7adf1743071f91e

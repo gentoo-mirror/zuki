@@ -1,0 +1,7 @@
+DEFINED_PHASES=install unpack
+DESCRIPTION=Firefox shim to add support for legacy extentions
+EAPI=8
+KEYWORDS=~amd64
+SLOT=0
+SRC_URI=https://git.gir.st/LegacyFox.git/snapshot/v4.0.tar.gz
+_md5_=730a35510a5aabaf925d6836b74f1d16
