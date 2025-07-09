@@ -11,6 +11,8 @@ LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
 
+IUSE="firefox-bin"
+
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
@@ -30,16 +32,15 @@ src_unpack() {
 #}
 
 src_install() {
-	#/usr/lib64/firefox
-	#echo ${D}
-	DESTDIR_FIREFOX="${D}/lib64/firefox"
-	#mkdir -p "$DESTDIR_FIREFOX"
-	mkdir "${D}/lib64"
-	mkdir "${D}/lib64/firefox"
+	if use firefox-bin; then
+		DESTDIR_FIREFOX="${D}/opt/firefox"
+	else
+		DESTDIR_FIREFOX="${D}/lib64/firefox"
+	fi
+	mkdir -p "$DESTDIR_FIREFOX"
+	# mkdir "${D}/lib64"
+	# mkdir "${D}/lib64/firefox"
 	make DESTDIR="$DESTDIR_FIREFOX" install || die "make install failed"
-	#DESTDIR="/usr/lib64/firefox/"
-	#cp config.js "$DESTDIR"
-	#make DISDIR=${D} install || die "make install failed"
 }
 
 
