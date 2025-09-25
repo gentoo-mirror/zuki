@@ -1,0 +1,25 @@
+From 0fc868926996f54db36b9ba4d0e5f0db10dde53f Mon Sep 17 00:00:00 2001
+From: Ignacio Sanchez Gines <863613+drhelius@users.noreply.github.com>
+Date: Thu, 28 Aug 2025 13:53:29 +0200
+Subject: [PATCH] Statically link SDL in Linux. Fix #194
+
+---
+ platforms/desktop-shared/Makefile.common | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/platforms/desktop-shared/Makefile.common b/platforms/desktop-shared/Makefile.common
+index cee092a..1597337 100644
+--- a/platforms/desktop-shared/Makefile.common
++++ b/platforms/desktop-shared/Makefile.common
+@@ -52,7 +52,7 @@ endif
+ 
+ ifeq ($(UNAME_S), Linux)
+     PLATFORM = "Linux"
+-    LDFLAGS += -lGL -ldl `sdl2-config --static-libs`
++    LDFLAGS += -lGL -ldl `sdl2-config --libs`
+     CPPFLAGS += `sdl2-config --cflags`
+     TARGET := $(TARGET_NAME)
+ else ifeq ($(UNAME_S), Darwin)
+-- 
+2.49.1
+
