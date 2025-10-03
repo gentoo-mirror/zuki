@@ -2,7 +2,7 @@ games-emulation/Gearboy 3.7.3: Game Boy / Gameboy Color emulator and debugger
 games-rpg/pokerogue-app-bin 2.4.6c: A desktop electron pokerouge port.
 games-util/steamremoteplaywhatever 9999: plugin for steam to unlock the option to remote play with any app.
 gui-libs/papersway 9999: a ipc plugin for sway to bring scrollable tilling to sway/i3wm
-gui-wm/cwc 9999: Extensible Wayland compositor with dynamic window management
+gui-wm/cwcwm 0.2.0 9999: Extensible Wayland compositor with dynamic window management
 gui-wm/river 0.3.10 0.3.11: A dynamic tiling Wayland compositor
 www-plugins/legacyfox 4.0: Firefox shim to add support for legacy extentions
 x11-apps/selectdefaultapp 9999: Define default applications on Linux in a sane way

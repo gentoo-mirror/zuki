@@ -1,0 +1,11 @@
+DEFINED_PHASES=configure install
+DEPEND=dev-lang/luajit x11-base/xwayland dev-build/ninja dev-libs/wayland-protocols gui-libs/wlroots:0.19 gui-libs/hyprcursor
+DESCRIPTION=Extensible Wayland compositor with dynamic window management
+EAPI=8
+HOMEPAGE=https://github.com/Cudiph/cwcwm
+KEYWORDS=~amd64
+LICENSE=GPL3
+RDEPEND=dev-lang/luajit x11-base/xwayland dev-build/ninja dev-libs/wayland-protocols gui-libs/wlroots:0.19 gui-libs/hyprcursor
+SLOT=0
+SRC_URI=https://github.com/Cudiph/cwcwm/archive/refs/tags/v0.2.0.tar.gz
+_md5_=e3e2093e1fa58fdf416d3e9b73fdf7e5
