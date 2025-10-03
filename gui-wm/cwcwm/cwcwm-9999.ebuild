@@ -21,6 +21,9 @@ KEYWORDS="~amd64"
 
 DEPEND="dev-lang/luajit x11-base/xwayland dev-build/ninja dev-libs/wayland-protocols
 gui-libs/wlroots:0.19
+dev-lua/lgi
+x11-libs/cairo
+x11-libs/pango
 gui-libs/hyprcursor"
 RDEPEND="${DEPEND}"
 BDEPEND=""
