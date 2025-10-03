@@ -16,7 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 DEPEND="dev-lang/luajit x11-base/xwayland dev-build/ninja dev-libs/wayland-protocols
->=gui-libs/wlroots-9999"
+gui-libs/wlroots:0.19
+gui-libs/hyprcursor"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 src_configure() {
